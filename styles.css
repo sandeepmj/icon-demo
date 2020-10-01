@@ -45,7 +45,7 @@ h4 {
 }
 
 h3 {
-    padding-left: 10px;
+    text-align: center;
 }
 
 figcaption,
@@ -94,6 +94,10 @@ hr {
 
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    p.intro {
+        max-width: 65%,
+    }
+
     .icon-container {
         /* Flex box styles go on the flex box element */
         display: flex;
