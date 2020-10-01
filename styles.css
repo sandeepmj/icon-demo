@@ -10,6 +10,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
  LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
 *********************************************************************/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
@@ -22,6 +23,7 @@ html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
 }
+
 /* responsive images */
 img {
     width: 100%;
@@ -33,36 +35,36 @@ h1 {
 
 h3 {
     font-size: 2em;
-    color    : gray;
+    color: gray;
 }
 
 h4 {
     text-transform: uppercase;
-    font-size     : 1.3em;
-    text-align    : center;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 h3 {
-    padding-left: 10px;
+    text-align: center;
 }
 
 figcaption,
 p {
     line-height: 1.5em;
-    font-size  : 1.2em;
+    font-size: 1.2em;
 }
 
 hr {
-    height    : 4px;
+    height: 4px;
     background: gray;
 }
 
 .container,
 .icon-container {
-    width    : 100%;
+    width: 100%;
     max-width: 1200px;
-    margin   : 0 auto;
-    padding  : 10px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .main_img {
@@ -71,30 +73,36 @@ hr {
 
 .head-photo {
     font-size: 1em;
-    color    : gray;
-    margin   : 5px;
+    color: gray;
+    margin: 5px;
 }
 
 .icon-container img {
-    display  : block;
+    display: block;
     max-width: 300px;
-    margin   : auto;
+    margin: auto;
 }
 
 .graphic-text {
     margin: auto;
 }
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    p.intro {
+        max-width: 65%,
+    }
+
     .icon-container {
         /* Flex box styles go on the flex box element */
-        display        : flex;
+        display: flex;
         justify-content: space-between;
-        align-items    : flex-start;
+        align-items: flex-start;
     }
 
     .graphic {
@@ -110,10 +118,15 @@ hr {
         /* width: 500px; */
     }
 }
+
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
 @media(min-width: 900px) {
+
     /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
+    .container {
+        max-width: 600px;
+    }
 }
