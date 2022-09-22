@@ -66,6 +66,10 @@ hr {
     margin: 0 auto;
     padding: 10px;
 }
+figure {
+    width: 100%;
+    margin: 0 auto;
+}
 
 .main_img {
     width: 100%;
@@ -102,7 +106,7 @@ hr {
         /* Flex box styles go on the flex box element */
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        /* align-items: flex-start; */
     }
 
     .graphic {
@@ -110,6 +114,8 @@ hr {
      * There are three elements so I made it 30%. With justify content set to space between, the extra 3% per element will go to negative space
      * serving as gutters */
         flex-basis: 30%;
+        /* can turn on this one or the one in icon-container. */
+        /* justify-content: space-between; */
         /* font-size: 1.3em; */
     }
 
@@ -128,5 +134,9 @@ hr {
     Note these styles will be applied to anything 729px or larger -- so desktop */
     .container {
         max-width: 600px;
+    }
+
+    figure {
+        max-width: 700px;
     }
 }
